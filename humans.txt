@@ -9,13 +9,8 @@
           /*  Team  */
 ----------------------------------
 
-Dev:            Rudy Seidinger
+Dev:
 Twitter: 		@
-
-----------------------------------
-
-Dev:            Guilherme Moretti (Mato Grosso)
-Twitter:        @
 
 ----------------------------------
 
@@ -24,14 +19,19 @@ Twitter:        @octavioamu
 
 ----------------------------------
 
-Designer: 		Cíntia Viana
-Twitter:		@cintia_viana
+Front End:      Gabriel Mateus
+Twitter:        @gabrielhellmateus
+
+----------------------------------
+
+Designer:
+Twitter:		@
 
 ----------------------------------
 
 /*  Softwares/Technologies  */
 
-Project Name: 	ead-ufrj
+Project Name:
 Last update:
 Technology: 	HTML5, CSS3, Javascript, Angular
 Softwares: 		Photoshop, Sublime Text 2
