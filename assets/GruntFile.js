@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         less: {
             site: {
                 files: {
-                    'stylesheets/application.min.css': 'stylesheets/less/application.less'
+                    'stylesheets/application.css': 'stylesheets/less/application.less'
                 },
                 options: {
                     yuicompress: true

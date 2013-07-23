@@ -1,6 +1,6 @@
 {
-  "projectName": "ead-ufrj",
-  "name": "ead-ufrj",
+  "projectName": "Project",
+  "name": "project",
   "developer": "Octavio Amuchastegui",
   "version": "1.0.0",
   "devDependencies": {
