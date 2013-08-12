@@ -5,11 +5,11 @@
 
 
 // Public - All plugins and external styles 
-// ------------------------------------------------
-*= require_directory ./public/
+// -----------------------------
+*= require_directory ./public
 
 
-// Bootstrap - The bootstrap styles
+// Bootstrap -  The bootstrap styles
 // ------------------------------------------------
 
 
