@@ -1,1 +1,6 @@
-assets/node_modules
+# Grunt modules files
+assets/grunt/node_modules
+
+# Mac shit files
+.DS_Store
+.DS_Store?

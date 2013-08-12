@@ -4,9 +4,11 @@
  / / / / / / / / |/ /  __/ / / / /_
 /_/_/ /_/_/ /_/|___/\___/_/ /_/\__/
 
-        www.innvent.com.br
 
-          /*  Team  */
+www.innvent.com.br
+
+
+/*  Team  */
 ----------------------------------
 
 Dev:
@@ -33,7 +35,7 @@ Twitter:		@
 
 Project Name:
 Last update:
-Technology: 	HTML5, CSS3, Javascript, Angular
+Technology: 	HTML5, CSS3, Javascript, Grunt
 Softwares: 		Photoshop, Sublime Text 2
 
 ----------------------------------

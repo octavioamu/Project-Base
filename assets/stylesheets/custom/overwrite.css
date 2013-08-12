@@ -1,0 +1,16 @@
+/*
+*    /$$$$$$             /$$
+*   /$$__  $$           |__/
+*  | $$  \ $$ /$$    /$$ /$$  /$$$$$$$  /$$$$$$
+*  | $$$$$$$$|  $$  /$$/| $$ /$$_____/ /$$__  $$
+*  | $$__  $$ \  $$/$$/ | $$|  $$$$$$ | $$  \ $$
+*  | $$  | $$  \  $$$/  | $$ \____  $$| $$  | $$
+*  | $$  | $$   \  $/   | $$ /$$$$$$$/|  $$$$$$/
+*  |__/  |__/    \_/    |__/|_______/  \______/
+
+*  Este arquivo é o último .css a ser chamado, ele sobrecreverá qualquer estilo do site.
+*  Use com cautela, em casos de manutenções de emergência.
+*  O Front End responsável pelo projeto pegará os estilos deste arquivo e irá anexar aos arquivos .less que ele estiver usando.
+*  A ideia é não acumular estilos aqui.
+*/
+

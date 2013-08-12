@@ -1,9 +1,9 @@
 module.exports = function(grunt) {
      var project_files = [
-            'javascripts/main.js'
+            '../javascripts/custom/*.js'
         ],
         plugins_files = [
-            'javascripts/plugins/*.js'
+            '../javascripts/plugins/*.js'
         ],
         uglify_files = plugins_files.concat(project_files);
 
@@ -13,10 +13,10 @@ module.exports = function(grunt) {
         less: {
             site: {
                 files: {
-                    'stylesheets/application.min.css': 'stylesheets/less/application.less'
+                    '../stylesheets/custom/style.css': '../stylesheets/less/imports.less'
                 },
                 options: {
-                    yuicompress: true
+                    //yuicompress: true
                 }
             }
         },
@@ -34,31 +34,34 @@ module.exports = function(grunt) {
         },
         uglify: {
             options: {
-                banner: '/*! <%= pkg.projectName %> - v<%= pkg.version %> - by <%= pkg.developer %> - <%= grunt.template.today("dd/mm/yyyy") %> */\n',
+                banner: '/*! <%= pkg.projectName %> - v<%= pkg.version %> - by <%= pkg.developers %> - <%= grunt.template.today("dd/mm/yyyy") %> */\n',
                 mangle: {
                     except: ['jQuery', 'Backbone']
                 }
             },
             js: {
+                options: {
+                    beautify: true
+                },
                 files: {
-                    'javascripts/site.min.js': uglify_files
+                    '../javascripts/site.js': uglify_files
                 }
             }
         },
         watch: {
             scripts: {
                 files: [
-                    '!javascripts/site.min.js',
-                    '!javascripts/lib/*.js',
-                    'javascripts/*.js',
-                    'javascripts/plugins/*.js'
+                    '!../javascripts/site.js',
+                    '!../javascripts/lib/*.js',
+                    '../javascripts/custom/*.js',
+                    '../javascripts/plugins/*.js'
                 ],
                 tasks: ['jshint', 'uglify']
             },
             stylesheets: {
                 files: [
-                    'stylesheets/less/**/*.less',
-                    'stylesheets/less/*.less'
+                    '../stylesheets/less/**/*.less',
+                    '../stylesheets/less/*.less'
                 ],
                 tasks: ['less']
             }
@@ -69,5 +72,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.registerTask('default', ['less', 'watch']);
+    grunt.registerTask('default', ['less', 'jshint', 'uglify', 'watch']);
 };
